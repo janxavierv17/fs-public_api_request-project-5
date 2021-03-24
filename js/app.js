@@ -66,12 +66,12 @@ const appendDataToModal = (randomUserData) => {
     modalDetails.innerHTML = `
     <img class="modal-img" src="${randomUserData.picture.large}" alt="profile picture"/>
     <h3 id="name" class="modal-name cap">${randomUserData.name.first} ${randomUserData.name.last}</h3>
-    <p class="modal-text">${randomUserData.email}</p>
-    <p class="modal-text cap">${randomUserData.location.city}</p>
+    <p class="modal-text">Email address: ${randomUserData.email}</p>
+    <p class="modal-text cap">City: ${randomUserData.location.city}</p>
     <hr/>
-    <p class="modal-text">${randomUserData.cell}</p>
-    <p class="modal-text">${randomUserData.location.street.number} ${randomUserData.location.street.name} ${randomUserData.location.city} ${randomUserData.location.state} ${randomUserData.location.postcode} </p>
-    <p class="modal-text">${mmddyy}</p>
+    <p class="modal-text">Phone: ${randomUserData.cell}</p>
+    <p class="modal-text">Address: ${randomUserData.location.street.number} ${randomUserData.location.street.name} ${randomUserData.location.city} ${randomUserData.location.state} ${randomUserData.location.postcode} </p>
+    <p class="modal-text">DOB: ${mmddyy}</p>
     `
 }
 
